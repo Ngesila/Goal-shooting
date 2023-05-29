@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!--font awesome and google fonts-->
 
 
@@ -20,17 +21,32 @@
     <h1 class="heading">
         <img class="logo" src="assets/images/shoot ball.png" alt="logo football">Goal Shooting
     </h1>
-    <div class="game-area">
 
+    <div class="game area">
+        <div class="controls-area">
+            <button data-type="leftarrow" class="btn btn--big btn--blue">
+                <i class="fa-regular fa-left"></i>
+            </button>
+            <button data-type="rightarrow" class="btn btn--big btn--black">
+                <i class="fa-regular fa-right"></i>
+        </div>
+
+        <div class="kickarea">
+            <span id="rightkick">0</span>
+            <span id="leftkick">0</span>
+            <p class="answer-message">Enter Answer:</p>
+            <input id="answer-box" type="number">
+        </div>
+        <button data-type="submit" class="btn btn--gray">Submit Answer</button>
     </div>
 
     <div class="score-area">
-        <p class="scores">points <span id="scores">0</span></p>
-        <p class=" scores">no points</p><span id="no points">0</span></p>
-
+        <p class="scores">goals <span id="score">0</span></p>
+        <p class="scores">missed goals <span id="no score">0</span></p>
     </div>
 
     <script src="assets/js/script.js"></script>
+
 </body>
 
 </html>
