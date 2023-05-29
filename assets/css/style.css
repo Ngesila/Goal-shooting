@@ -100,24 +100,24 @@ body {
     left: -0.5em;
 }
 
-.btn--leftarrow {
+.btn--leftkick {
     border-color: blue;
     color: blue;
 }
 
-.btn--leftarrow:active,
-.btn--leftarrow:hover {
+.btn--leftkick:active,
+.btn--blue:hover {
     background-color: darkblue;
     color: white;
 }
 
-.btn--rightarrow {
+.btn--rightkick {
     border-color: blue;
     color: blue;
 }
 
-.btn--rightarrow:active,
-.btn--rightarrow:hover {
+.btn--righkick:active,
+.btn--black:hover {
     background-color: black;
     color: white;
 }
@@ -135,15 +135,13 @@ body {
 }
 
 .results {
-    border: 2px;
-    color: #445361;
-    display: inline-block;
-    height: 30px;
-    width: 300px;
-    font-size: 1.2rem;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1%;
+    margin: 5em auto;
+    display: block;
+    padding: 20px;
+
+
+
+
 }
 
 
