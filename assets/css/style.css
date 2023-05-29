@@ -30,12 +30,15 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
+    font-size: 2rem;
 }
 
 .score-area {
     margin: 5px auto;
     width: 60%;
     font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
 }
 
 .controls-area {
@@ -127,6 +130,8 @@ body {
     background-color: white;
     border: 1px transparent;
     border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
 }
 
 .btn--gray:active,
@@ -135,12 +140,11 @@ body {
 }
 
 .results {
-    margin: 5em auto;
+    margin: 2em auto;
     display: block;
-    padding: 20px;
-
-
-
+    padding: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
 
 }
 
