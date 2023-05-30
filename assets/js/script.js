@@ -9,22 +9,40 @@ document.addEventListener("DOMContentLoaded", function () {
             if (this.getAttribute("data-type") === "submit") {
                 alert("You clicked Submit!");
             } else {
-                let choice = this.getAttribute("data-type");
-                alert(`You clicked ${choice}`);
+                let operand = this.getAttribute("data-type");
+                choice(operand);
             }
         });
     }
 });
 
 
-
+let kickersChoice;
+let computerChoice;
+let goals;
+let missedGoals;
 
 
 /**create functions structure */
-function rungame() { }
-function kick() { }
-function result() { }
-function morescores() { }
-function lessscores() { }
-displayGoalkeeper(){ }
-displayResults(){ }
+function choice(operand) {
+    if (operand === "leftkick") {
+        displayChoice(operand);
+        kickersChoice = "left";
+        console.log(kickersChoice);
+    } else if (operand === "rightkick") {
+        displayChoice(operand);
+        kickersChoice = "right";
+        console.log(kickersChoice);
+    } else {
+        alert(`Unknown game type: ${operand}`);
+        throw `Unknown game type: ${operand}. Aborting!`;
+    }
+
+}
+
+
+function displayChoice(operand) {
+    document.getElementById("output").textContent = operand;
+}
+
+
