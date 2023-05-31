@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     for (let button of buttons) {
         button.addEventListener("click", function () {
             if (this.getAttribute("data-type") === "submit") {
-                alert("You clicked Submit!");
+                goalKeeper();
             } else {
                 let operand = this.getAttribute("data-type");
                 choice(operand);
@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 let kickersChoice;
-let computerChoice;
 let goals;
 let missedGoals;
 
@@ -27,12 +26,11 @@ let missedGoals;
 function choice(operand) {
     if (operand === "leftkick") {
         displayChoice(operand);
-        kickersChoice = "left";
-        console.log(kickersChoice);
+        console.log(operand);
+
     } else if (operand === "rightkick") {
         displayChoice(operand);
-        kickersChoice = "right";
-        console.log(kickersChoice);
+        console.log(operand);
     } else {
         alert(`Unknown game type: ${operand}`);
         throw `Unknown game type: ${operand}. Aborting!`;
@@ -44,5 +42,12 @@ function choice(operand) {
 function displayChoice(operand) {
     document.getElementById("output").textContent = operand;
 }
+
+
+function goalKeeper() {
+    let randomnumbers = Math.floor(Math.random() * 10) + 1;
+    console.log(randomnumbers);
+}
+
 
 
