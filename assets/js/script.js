@@ -47,7 +47,18 @@ function displayChoice(operand) {
 function goalKeeper() {
     let randomnumbers = Math.floor(Math.random() * 10) + 1;
     console.log(randomnumbers);
+
+    if (randomnumbers % 2 == 0) {
+        let jump = "right";
+        console.log(jump);
+
+    } else {
+        let jump = "left";
+
+        console.log(jump);
+    }
 }
+
 
 
 
