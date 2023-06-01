@@ -17,19 +17,17 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-let kickersChoice;
-let goals;
-let missedGoals;
 
 
 /**create functions structure */
 function choice(operand) {
+
     if (operand === "leftkick") {
-        displayChoice(operand);
+        display("output", operand);
         console.log(operand);
 
     } else if (operand === "rightkick") {
-        displayChoice(operand);
+        display("output", operand);
         console.log(operand);
     } else {
         alert(`Unknown game type: ${operand}`);
@@ -39,26 +37,28 @@ function choice(operand) {
 }
 
 
-function displayChoice(operand) {
-    document.getElementById("output").textContent = operand;
+function display(operand1, operand2) {
+    document.getElementById(operand1).textContent = operand2;
+
 }
 
 
 function goalKeeper() {
     let randomnumbers = Math.floor(Math.random() * 10) + 1;
-    console.log(randomnumbers);
-
     if (randomnumbers % 2 == 0) {
         let jump = "right";
-        console.log(jump);
+        display("outputtwo", jump);
+
 
     } else {
         let jump = "left";
+        display("outputtwo", jump);
 
-        console.log(jump);
+
     }
-}
 
+
+}
 
 
 
