@@ -16,8 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-let shot;
-let jump;
+let goals = 0;
+let missedGoals = 0;
 
 
 
@@ -28,13 +28,13 @@ function choice(operand) {
 
     if (operand === "leftkick") {
         display("output", operand);
-        shot = "left";
-        console.log(operand);
+
+
 
     } else if (operand === "rightkick") {
         display("output", operand);
-        shot = "right";
-        console.log(operand);
+
+
     } else {
         alert(`Unknown game type: ${operand}`);
         throw `Unknown game type: ${operand}. Aborting!`;
@@ -58,14 +58,12 @@ function goalKeeper() {
         let jump = "left";
         display("outputtwo", jump);
     }
+    updateScores();
 }
 
 
 function check() {
     let check = document.getElementById("output").innerText;
-    console.log(check);
-
-
     if (check === "RIGHTKICK" || check === "LEFTKICK") {
         goalKeeper();
     } else {
@@ -76,16 +74,23 @@ function check() {
 }
 
 function updateScores() {
-    if (jump == shot) {
-        var results = parseInt(document.getElementById('no-score').innerText);
 
-        document.getElementById('no-score').textContent = ++results;
+    let choice = document.getElementById("output").innerText;
+    let goalKeeper = document.getElementById("outputtwo").innerText;
+
+    if (choice === "LEFTKICK" && goalKeeper === "RIGHT") {
+        document.getElementById('score').textContent = ++goals;
+
+    } else if (choice === "RIGHTKICK" && goalKeeper === "LEFT") {
+        document.getElementById('score').textContent = ++goals;
+
     } else {
-        var results = parseInt(document.getElementById('score').innerText);
-
-        document.getElementById('score').textContent = ++results;
+        document.getElementById('no-score').textContent = ++missedGoals;
     }
+
 }
+
+
 
 
 
