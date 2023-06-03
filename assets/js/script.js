@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     for (let button of buttons) {
         button.addEventListener("click", function () {
             if (this.getAttribute("data-type") === "submit") {
-                goalKeeper();
+                check();
             } else {
                 let operand = this.getAttribute("data-type");
                 choice(operand);
@@ -15,6 +15,10 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+let shot;
+let jump;
+
 
 
 
@@ -24,10 +28,12 @@ function choice(operand) {
 
     if (operand === "leftkick") {
         display("output", operand);
+        shot = "left";
         console.log(operand);
 
     } else if (operand === "rightkick") {
         display("output", operand);
+        shot = "right";
         console.log(operand);
     } else {
         alert(`Unknown game type: ${operand}`);
@@ -48,17 +54,46 @@ function goalKeeper() {
     if (randomnumbers % 2 == 0) {
         let jump = "right";
         display("outputtwo", jump);
-
-
     } else {
         let jump = "left";
         display("outputtwo", jump);
+    }
+}
 
 
+function check() {
+    let check = document.getElementById("output").innerText;
+    console.log(check);
+
+
+    if (check === "RIGHTKICK" || check === "LEFTKICK") {
+        goalKeeper();
+    } else {
+        alert(`KICK!`);
     }
 
 
 }
+
+function updateScores() {
+    if (jump == shot) {
+        var results = parseInt(document.getElementById('no-score').innerText);
+
+        document.getElementById('no-score').textContent = ++results;
+    } else {
+        var results = parseInt(document.getElementById('score').innerText);
+
+        document.getElementById('score').textContent = ++results;
+    }
+}
+
+
+
+
+
+
+
+
 
 
 
