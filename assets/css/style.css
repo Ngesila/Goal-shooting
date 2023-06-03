@@ -121,7 +121,7 @@ body {
 
 .btn--righkick:active,
 .btn--black:hover {
-    background-color: black;
+    background-color: darkblue;
     color: white;
 }
 
@@ -136,7 +136,7 @@ body {
 
 .btn--gray:active,
 .btn--gray:hover {
-    background-color: #0d1013;
+    background-color: #0d1013#;
 }
 
 .results {
