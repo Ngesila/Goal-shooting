@@ -16,9 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+
 let goals = 0;
 let missedGoals = 0;
-
 
 
 
@@ -87,9 +87,32 @@ function updateScores() {
     } else {
         document.getElementById('no-score').textContent = ++missedGoals;
     }
-
+    winner(goals);
+    console.log(goals);
 }
 
+function winner(goals) {
+
+    while (goals < 6) {
+        if (goals === 5) {
+            alert(`GAMEOVER! RE-SET!`);
+            goals = 0;
+            missedGoals = 0;
+            document.getElementById('score').textContent = "";
+            document.getElementById('no-score').textContent = "";
+            document.getElementById('output').textContent = "";
+            document.getElementById('outputtwo').textContent = "";
+
+            document.getElementById('score').textContent = 0;
+            document.getElementById('no-score').textContent = 0;
+
+
+
+
+        }
+        break;
+    }
+}
 
 
 

@@ -21,7 +21,7 @@ body {
 /* --------- Game layout */
 
 .game-area {
-    background-color: #445361;
+    background-color: #000000;
     box-sizing: border-box;
     width: 85%;
     height: 65vh;
