@@ -115,28 +115,28 @@ body {
 }
 
 .btn--rightkick {
-    border-color: blue;
+    border-color: brown;
     color: blue;
 }
 
 .btn--righkick:active,
 .btn--black:hover {
-    background-color: darkblue;
+    background-color: brown;
     color: white;
 }
 
-.btn--gray {
+.btn--yellow {
     margin-top: 25px;
     background-color: white;
-    border: 1px transparent;
+    border-color: blueviolet border;
     border-radius: 20px;
     text-transform: uppercase;
     letter-spacing: 1.2px;
 }
 
-.btn--gray:active,
-.btn--gray:hover {
-    background-color: #0d1013#;
+.btn--yellow:active,
+.btn--yellow:hover {
+    background-color: #FFFF00;
 }
 
 .results {
