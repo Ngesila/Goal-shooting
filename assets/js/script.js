@@ -96,8 +96,7 @@ function winner(goals) {
     while (goals < 6) {
         if (goals === 5) {
             alert(`GAMEOVER! RE-SET!`);
-            goals = 0;
-            missedGoals = 0;
+
             document.getElementById('score').textContent = "";
             document.getElementById('no-score').textContent = "";
             document.getElementById('output').textContent = "";
@@ -105,6 +104,11 @@ function winner(goals) {
 
             document.getElementById('score').textContent = 0;
             document.getElementById('no-score').textContent = 0;
+
+
+
+            goals = 0;
+            missedGoals = 0;
 
 
 
