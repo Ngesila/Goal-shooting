@@ -1,6 +1,6 @@
 /*stlying*/
 body {
-    background-color: #F8C8DC;
+    background-color: #77dd77;
     font-family: "Arvo", sans-serif;
     color: #445361;
     text-align: center;
@@ -21,7 +21,8 @@ body {
 /* --------- Game layout */
 
 .game-area {
-    background-color: #000000;
+    background-color: #FFFFFF;
+    border-color: #ff0000;
     box-sizing: border-box;
     width: 85%;
     height: 65vh;
