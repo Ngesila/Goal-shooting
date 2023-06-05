@@ -16,39 +16,44 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-
+//global variables for counting goals and missed goals//
 var goals = 0;
 var missedGoals = 0;
 
-
-
-
 /**create functions structure */
+
+
+
+/**
+ * detects whether the user has clicked on leftkick or rightkick
+ */
 function choice(operand) {
 
     if (operand === "leftkick") {
         display("output", operand);
 
-
-
     } else if (operand === "rightkick") {
         display("output", operand);
-
 
     } else {
         alert(`Unknown game type: ${operand}`);
         throw `Unknown game type: ${operand}. Aborting!`;
     }
-
 }
 
-
+/** 
+ * shows the users choice
+*/
 function display(operand1, operand2) {
     document.getElementById(operand1).textContent = operand2;
-
 }
 
 
+/** 
+ * random number generated
+ * when even number goalkeeper jumps to right
+ *  odd number he jumps left
+*/
 function goalKeeper() {
     let randomnumbers = Math.floor(Math.random() * 10) + 1;
     if (randomnumbers % 2 == 0) {
@@ -61,7 +66,10 @@ function goalKeeper() {
     updateScores();
 }
 
-
+/** 
+ * to check a kick 
+ * if not alert pops
+*/
 function check() {
     let check = document.getElementById("output").innerText;
     if (check === "RIGHTKICK" || check === "LEFTKICK") {
@@ -69,10 +77,14 @@ function check() {
     } else {
         alert(`KICK!`);
     }
-
-
 }
 
+
+/**
+ * scores and no scores
+ * updates the display
+ * resets game after 5 goals
+ */
 function updateScores() {
 
     let choice = document.getElementById("output").innerText;
@@ -102,8 +114,6 @@ function updateScores() {
         missedGoals = 0;
 
     }
-
-
 }
 
 
