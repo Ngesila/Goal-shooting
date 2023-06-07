@@ -2,9 +2,19 @@
 
 
 
-## Javascript based-simple game: If and ![Goal Shooting structure](https://github.com/Ngesila/Goal-shooting/assets/126699411/9d5d177d-4e8a-416f-82d1-30a69469f271)
-else modules, unfortunately no loops modules could fit in.
 
+
+![Goal Shooting structure](https://github.com/Ngesila/Goal-shooting/assets/126699411/a4ff96b7-3231-4af7-970d-21b556f1508d)
+
+
+![Goal Shooting_instruction page_1](https://github.com/Ngesila/Goal-shooting/assets/126699411/058692d9-3336-4480-826e-33546b897a07)
+
+
+![Goal Shooting_challenge page_1](https://github.com/Ngesila/Goal-shooting/assets/126699411/5da81924-dbc9-4944-b6d2-4d4e4464f521)
+
+
+
+## Javascript based-simple game: If and else modules, unfortunately no loops modules could not fit in.
 ## Game instruction
 
 #### click left or right kick, submit.Goalkeeper jumps to, the right or left represent the randomly generated numbers.The even number are for right and odd for left.A goal is only achieved if the kicker and goalkeeper are opposite, one side is either left or the other is right.If both sides are same, i.e right-right or left-left then that counts as missed score.After 5 goals the game resets.It is simple and fun!
