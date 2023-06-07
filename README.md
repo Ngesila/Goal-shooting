@@ -1,6 +1,9 @@
 # Goal Shooting-Project 2_2023
 
-## Javascript based-simple game: If and else modules, unfortunately no loops modules could fit in.
+
+
+## Javascript based-simple game: If and ![Goal Shooting structure](https://github.com/Ngesila/Goal-shooting/assets/126699411/9d5d177d-4e8a-416f-82d1-30a69469f271)
+else modules, unfortunately no loops modules could fit in.
 
 ## Game instruction
 
