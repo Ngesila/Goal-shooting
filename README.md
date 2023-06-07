@@ -1,10 +1,10 @@
 # Goal Shooting-Project 2_2023
 
-## Javascript based-simple game: If and else modules, unfortunatels no loops modules could fit in.
+## Javascript based-simple game: If and else modules, unfortunately no loops modules could fit in.
 
 ## Game instruction
 
-#### click left or righ kick, submit.Goalkeeper jumps to, the right or left represent the randomly generated numbers.The even number are for right and odd for left.A goal is only achieved if the kicker and goalkeeper are opposite, one side is either left or the other is right.If both sides are same, i.e rightright or leftleft then that counts as missed score.After 5 goals the game resets.It is simple and fun!
+#### click left or righ kick, submit.Goalkeeper jumps to, the right or left represent the randomly generated numbers.The even number are for right and odd for left.A goal is only achieved if the kicker and goalkeeper are opposite, one side is either left or the other is right.If both sides are same, i.e right-right or left-left then that counts as missed score.After 5 goals the game resets.It is simple and fun!
 
 # Typography
 
@@ -49,3 +49,4 @@
 ### Tutors and Mentor from Code institute.
 
 ### Love Running and Love Maths previous modules in Code institute.
+
