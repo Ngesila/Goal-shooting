@@ -185,7 +185,7 @@ body {
 
 /* --------- media queries */
 
-@media (max-width: 414px) {
+@media (max-width: 450px) {
     .controls-area {
         width: 100%;
     }

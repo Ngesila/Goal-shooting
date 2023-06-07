@@ -46,6 +46,6 @@
 
 # Acknowledgments
 
-### Tutors and Mentor from Code instistute.
+### Tutors and Mentor from Code institute.
 
 ### Love Running and Love Maths previous modules in Code institute.
