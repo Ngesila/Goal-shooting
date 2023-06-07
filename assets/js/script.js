@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 var goals = 0;
 var missedGoals = 0;
 
-/**create functions structure */
+
 
 
 
@@ -75,7 +75,7 @@ function check() {
     if (check === "RIGHTKICK" || check === "LEFTKICK") {
         goalKeeper();
     } else {
-        alert(`KICK!`);
+        alert(`Please select left or right kick!`);
     }
 }
 

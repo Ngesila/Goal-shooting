@@ -129,7 +129,7 @@ body {
 .btn--yellow {
     margin-top: 25px;
     background-color: white;
-    border-color: blueviolet border;
+    border-color: blueviolet;
     border-radius: 20px;
     text-transform: uppercase;
     letter-spacing: 1.2px;
@@ -149,6 +149,7 @@ body {
 
 }
 
+/* --------- media queries */
 
 @media (max-width: 414px) {
     .controls-area {
