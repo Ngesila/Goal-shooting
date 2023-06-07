@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Goal Shooting">
+    <meta name="keywords" content="Goal Shooting">
+
+
+    <!--font awesome and google fonts-->
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Goal Shooting</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+
+</head>
+<header></header>
+
+<body>
+    <header>
+        <a href="index.html">
+
+            <h1 class="heading">
+                <img class="logo" src="assets/images/icons8-soccer-50.png" alt="logo football"> Goal Shooting
+            </h1>
+        </a>
+        <nav>
+            <ul id="menu">
+                <li>
+                    <a href="field.html" class="active">Challenge</a>
+                </li>
+                <li>
+                    <a href="index.html">Field</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <div class="game area">
+        <div class="controls-area">
+            <button data-type="leftkick" class="btn btn--big btn--blue">
+
+            </button>
+
+            <button data-type="rightkick" class="btn btn--big btn--black">
+
+            </button>
+
+        </div>
+
+        <div class="results">
+            <span>choice:</span>
+            <span id="output"></span>
+        </div>
+
+        <div>
+            <button data-type="submit" class="btn btn--big btn--yellow">
+            </button>
+
+        </div>
+
+
+        <div class="results">
+            <span>goalkeeper:</span>
+            <span id="outputtwo"></span>
+        </div>
+
+
+
+
+    </div>
+
+    <div class="score-area">
+        <p class="scores">
+            goals <span id="score">0</span>
+        </p>
+        <p class="scores">
+            missed goals <span id="no-score">0</span>
+        </p>
+    </div>
+
+
+    <script src="assets/js/script.js"></script>
+
+
+</body>
+
+</html>

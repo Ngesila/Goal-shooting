@@ -22,76 +22,35 @@
 
 
 </head>
-<header></header>
+<header>
 
-<body>
-    <header>
-        <a href="index.html">
+    <body>
+        <header>
+            <a href="index.html">
 
-            <h1 class="heading">
-                <img class="logo" src="assets/images/icons8-soccer-50.png" alt="logo football"> Goal Shooting
-            </h1>
-        </a>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html" class="active">Home</a>
-                </li>
-                <li>
-                    <a href="#">shootingfield</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-
-    <div class="game area">
-        <div class="controls-area">
-            <button data-type="leftkick" class="btn btn--big btn--blue">
-
-            </button>
-
-            <button data-type="rightkick" class="btn btn--big btn--black">
-
-            </button>
-
+                <h1 class="heading">
+                    <img class="logo" src="assets/images/icons8-soccer-50.png" alt="logo football"> Goal Shooting
+                </h1>
+            </a>
+            <nav>
+                <ul id="menu">
+                    <li>
+                        <a href="field.html">Challenge</a>
+                    </li>
+                    <li>
+                        <a href="index.html" class="active">Field</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div id="middle">
+            <p>How many goals can you score ?</p>
+            <p>Head to Challenge</p>
+            <p>Click on left or right kick</p>
+            <p>Submit and count your goals.</p>
+            <p>Have fun!</p>
         </div>
-
-        <div class="results">
-            <span>choice:</span>
-            <span id="output"></span>
-        </div>
-
-        <div>
-            <button data-type="submit" class="btn btn--big btn--yellow">
-            </button>
-
-        </div>
-
-
-        <div class="results">
-            <span>goalkeeper:</span>
-            <span id="outputtwo"></span>
-        </div>
-
-
-
-
-    </div>
-
-    <div class="score-area">
-        <p class="scores">
-            goals <span id="score">0</span>
-        </p>
-        <p class="scores">
-            missed goals <span id="no-score">0</span>
-        </p>
-    </div>
-
-
+    </body>
     <script src="assets/js/script.js"></script>
-
-
-</body>
 
 </html>

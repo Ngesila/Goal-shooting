@@ -6,6 +6,40 @@ body {
     text-align: center;
 }
 
+/* navigation links */
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+}
+
+#menu li {
+    float: right;
+    margin-right: 30px;
+    list-style-type: none;
+}
+
+#menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu a:hover {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+#middle {
+    padding-top: 30px;
+    width: 33%;
+    margin: 0 auto;
+    position: relative;
+}
+
+
 /* --------- Heading */
 
 .heading {
